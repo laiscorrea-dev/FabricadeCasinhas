@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Fredoka", sans-serif;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+}
+
+h1 {
+  font-family: "Fredoka", sans-serif; /* Importando a biblioteca da fonte*/
+  font-size: 48px;
+}
+
+h2 {
+  color: #1f5e4a;
+  font-size: 40px;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.amarelo {
+  color: #a72b54;
+}
+
+.logotipo {
+  font-family: "Fredoka", sans-serif;
+  font-size: 42px;
+  color: #1f5e4a;
+  font-weight: bold;
+}
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+.cabecalho .menu {
+  display: flex;
+  gap: 16px;
+}
+
+.cabecalho .menu a {
+  text-decoration: none;
+  color: #1f5e4a;
+}
+
+/* Hero Section */
+.hero {
+  background: #268668;
+  margin: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  padding: 40px 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero_conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero .hero_acoes {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.hero .hero_acoes button {
+  padding: 16px 24px;
+  background: #a72b54;
+  color: #f0f5f3;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.hero .hero_acoes a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero_imagem img {
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+
+@media (max-width: 768px) {
+  .hero .hero_conteudo {
+    align-items: center;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  /* quando atingir o máximo de largura*/
+  .hero_imagem {
+    display: none; /* A imagem sai de cena*/
+  }
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.sobre_info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.sobre_info .sobre_conteudo {
+  flex: 1;
+}
+
+.sobre_info .sobre_imagem {
+  flex: 1;
+  /*aspect-ratio: 1 / 1;*/
+  background: #1f5e4a;
+  border-radius: 30px;
+  padding: 24px 24px 0 24px;
+  display: flex;
+  justify-content: center;
+}
+.sobre_indicadores {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.sobre_indicadores .sobre_indicador_item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sobre_indicadores .sobre_indicador_item strong {
+  font-family: "Fredoka", sans-serif;
+  font-size: 40px;
+  color: #1f5e4a;
+}
+
+@media (max-width: 768px) {
+  .sobre_info {
+    flex-direction: column;
+  }
+}
+.tosa {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+/*Contato*/
+.contato {
+  background: #1f5e4a;
+  color: white;
+  padding: 60px 0;
+  margin-top: 10px;
+}
+.contato .titulo_secao {
+  color: white;
+}
+
+.contato_container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.contato_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contato_info p {
+  display: flex;
+  gap: 8px;
+}
+.contato_formulario {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contato_formulario input {
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.contato_formulario button {
+  padding: 8px 16px;
+  width: 100%;
+  border: 0;
+  background: #f4c542;
+  color: #1f5e4a;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.rodape {
+  background: #1d5040;
+  height: 70px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ----- Serviços ------- */
+
+.titulo_servicos,
+.titulo_servico {
+  text-align: center;
+}
+
+.icons_todos {
+  display: flex;
+  justify-content: space-around;
+  margin: 18px;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.tosa,
+.consulta,
+.shop {
+  flex: 1;
+  align-content: center;
+  height: 200px;
+  background: #f4c542;
+  text-align: center;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+/* ------ Hamburguer -----  */
+.menu {
+  display: flex;
+  gap: 10px;
+}
+#hamburguer {
+  display: none;
+  font-size: 28px;
+  background: none;
+  cursor: pointer;
+  color: #a72b54;
+  border: none;
+}
+@media (max-width: 768px) {
+  #hamburguer {
+    display: block;
+  }
+  .cabecalho .menu {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+    gap: 15px;
+    background: #eff1f5;
+    flex-direction: column;
+    display: none;
+    border-radius: 2px;
+    z-index: 1000;
+    padding: 10px;
+  }
+  .cabecalho .menu.ativa {
+    display: flex;
+  }
+}
