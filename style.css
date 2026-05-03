@@ -147,11 +147,13 @@ h2 {
   padding: 24px 24px 0 24px;
   display: flex;
   justify-content: center;
+
 }
 .sobre_indicadores {
   display: flex;
   gap: 16px;
   margin-top: 16px;
+
 }
 .sobre_indicadores .sobre_indicador_item {
   display: flex;
@@ -219,8 +221,8 @@ h2 {
   padding: 8px 16px;
   width: 100%;
   border: 0;
-  background: #f4c542;
-  color: #1f5e4a;
+  background: #a72b54;
+  color: #f0f5f3;
   font-weight: bold;
   border-radius: 8px;
 }
@@ -238,6 +240,7 @@ h2 {
 .titulo_servicos,
 .titulo_servico {
   text-align: center;
+  color: #a72b54;
 }
 
 .icons_todos {
@@ -254,7 +257,7 @@ h2 {
   flex: 1;
   align-content: center;
   height: 200px;
-  background: #f4c542;
+  background: #1f5e4a;
   text-align: center;
   border-radius: 10px;
   padding: 24px;
